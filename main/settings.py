@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-@1p$a6x!f*ru@(^ukpgsgn@=ra^+)7-s3$phy=x4$n$fbc-9wi'
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
@@ -87,7 +87,7 @@ DATABASES = {
 
 database_url = os.environ.get('DATABASE_URL')
 
-DATABASES['default'] = dj_database_url.parse(database_url)
+DATABASES["default"] = dj_database_url.parse(database_url)
 
 # postgres://django_postgresql_render_user:6JAwXFUXK1akAXKxVRWuoBlJWADKlSdC@dpg-cnm60qev3ddc73fkeqvg-a.oregon-postgres.render.com/django_postgresql_render
 
